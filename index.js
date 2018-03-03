@@ -31,13 +31,14 @@ function viewCart() {
   }
   console.log("In your cart, you have " + toPrint.join(" and ") + ".");
   } else if (cart.length > 2) {
+     var lastItem = Object.keys(cart[l]);
+     var lastPrice = cart[l][lastItem];
    for (var p = 0; p < cart.length - 1 ; p++) {
      var items = Object.keys(cart[p]);
      var prices = cart[p][items];
      toPrint.push(items + " at $" + prices);
   }
-  var lastItem = Object.keys(cart[l]);
-  var lastPrice = cart[l][lastItem];
+  
   console.log("In your cart, you have " + toPrint.join(", ") + " and " + lastItem + " at $" + lastPrice + ".");
   }
 }
