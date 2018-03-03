@@ -48,6 +48,7 @@ function total() {
 function removeFromCart(item) {
   if (!item) {
     console.log("That item is not in your cart.");
+    return cart;
   } else { 
     delete Object.keys(cart[item]);
   }  
