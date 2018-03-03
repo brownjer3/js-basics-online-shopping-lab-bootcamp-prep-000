@@ -36,7 +36,11 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  for (i = 0; i < cart.length; i++) {
+  var item = Object.keys(cart[i]);
+  var price = cart[i][item];
+  var total =
+  }
 }
 
 function removeFromCart(item) {
@@ -46,3 +50,21 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
+
+
+  // loop over our cart and for every item
+ // create the string ${item} at ${price}
+ // save it somewhere (maybe an array?)
+ 
+ // join(' - ') function
+ // array ['cat', 'dog', 'ocelot']
+ // array.join(' - ') => "cat - dog - ocelot"
+ //[ ${item} at ${price}, ${item} at ${price}, ${item} at ${price}]
+ 
+ // object = {banana: 12}
+ // object.banana or object["banana"] => 12
+ // cart[0] = object
+ // var keys = Object.keys(cart[0]); => ["banana"]
+ // item = keys[0] => "banana"
+ // price = object[key] => '12'
+ 
