@@ -40,7 +40,7 @@ function total() {
   for (var i = 0; i < cart.length; i++) {
   var item = Object.keys(cart[i]);
   var price = cart[i][item];
-  total += price++;
+  total += price + price++;
   //total.push(price);
   }
   return total;
