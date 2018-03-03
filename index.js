@@ -33,7 +33,7 @@ function viewCart() {
   } else if (cart.length > 2) {
      var lastItem = Object.keys(cart[l - 1]);
      var lastPrice = cart[l][lastItem];
-   for (var p = 0; p < cart.length - 1 ; p++) {
+   for (var p = 0; p < cart.length - 2 ; p++) {
      var items = Object.keys(cart[p]);
      var prices = cart[p][items];
      toPrint.push(items + " at $" + prices);
