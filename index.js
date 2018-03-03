@@ -43,7 +43,7 @@ function total() {
   price += price++;
   total.push(price);
   }
-  return ;
+  return total;
 } 
 
 function removeFromCart(item) {
