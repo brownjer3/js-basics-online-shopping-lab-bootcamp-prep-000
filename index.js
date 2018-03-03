@@ -29,7 +29,7 @@ function viewCart() {
      var price = cart[i][item];
        toPrint.push(item + " at $" + price);
   }
-  console.log("In your cart, you have " + toPrint.join(", ") + ".");
+  console.log("In your cart, you have " + toPrint.join(" and ") + ".");
   } else if (cart.length > 2) {
      var lastItem = Object.keys(cart[l - 1]);
      var lastPrice = cart[l][lastItem];
