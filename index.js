@@ -30,7 +30,11 @@ function viewCart() {
        toPrint.push(item + " at $" + price);
   }
   console.log("In your cart, you have " + toPrint.join(" and ") + ".");
-  } else if (cart.length > 2) {
+  } 
+}
+  
+  
+  /*else if (cart.length > 2) {
      var lastItem = Object.keys(cart[l]);
      var lastPrice = cart[l][lastItem];
    for (var p = 0; p < cart.length - 1 ; p++) {
@@ -38,10 +42,9 @@ function viewCart() {
      var prices = cart[p][items];
      toPrint.push(items + " at $" + prices);
   }
-  
   console.log("In your cart, you have " + toPrint.join(", ") + " and " + lastItem + " at $" + lastPrice + ".");
   }
-}
+}*/
 
  // " and " + Object.keys(cart(cart.length-1)) + " at " + Object.values(cart(cart.length-1))
  
