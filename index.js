@@ -52,6 +52,7 @@ function removeFromCart(item) {
     var remove = Object.keys(cart[remove]);
     delete cart[remove];
   }  
+  return cart;
 }
 
 function placeOrder(cardNumber) {
