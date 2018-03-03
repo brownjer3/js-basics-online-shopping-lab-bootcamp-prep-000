@@ -33,7 +33,7 @@ function viewCart() {
     //toPrint = toPrint.pop(); 
     var lastItem = toPrint.pop() ;
     var lastPrice = cart[i][lastItem];
-    console.log("In your cart, you have " + toPrint.join(", ") + " and " + toPrint.pop() ".");
+    console.log("In your cart, you have " + toPrint.join(", ") + " and " + toPrint.pop() + ".");
   } 
 }
   /* 
