@@ -23,13 +23,13 @@ function viewCart() {
   var l = cart.length;
   if (cart.length === 0) {
    console.log("Your shopping cart is empty.");
- } else if (cart.length <= 2) {
+ } else {
    for (var i = 0; i < cart.length; i++) {
      var item = Object.keys(cart[i]);
      var price = cart[i][item];
        toPrint.push(item + " at $" + price);
   }
-  console.log("In your cart, you have " + toPrint.join(" and ") + ".");
+  console.log("In your cart, you have " + toPrint.join(", ") + ".");
   } 
 }
   
