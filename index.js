@@ -31,7 +31,7 @@ function viewCart() {
     console.log("In your cart, you have " + toPrint.join(" and ") + ".");
   } else if (cart.length >= 3 ) {
     toPrint = toPrint.pop(); 
-    var lastItem = toPrint.slice(-1) ;
+    var lastItem = toPrint.pop() ;
     var lastPrice = cart[i][lastItem];
     console.log("In your cart, you have " + toPrint.join(", ") + " and " + lastItem + " at $" + lastPrice + ".");
   } 
