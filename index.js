@@ -30,7 +30,7 @@ function viewCart() {
   } else if (cart.length <= 2 ) {
     console.log("In your cart, you have " + toPrint.join(" and ") + ".");
   } else if (cart.length >= 3 ) {
-    var items = toPrint.slice();
+    var items = toPrint.slice(-1)[0];
     console.log("In your cart, you have " + items.join(", ") + " and " + toPrint.pop() + ".");
   } 
 }
