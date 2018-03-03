@@ -49,7 +49,7 @@ function removeFromCart(item) {
   if (!item) {
     console.log("That item is not in your cart.");
   } else { 
-     
+    var item =  Object.keys(cart[item])
   }  
 }
 
