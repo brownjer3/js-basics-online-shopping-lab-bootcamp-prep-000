@@ -25,11 +25,11 @@ function viewCart() {
     var item = Object.keys(cart[i]);
     var price = cart[i][item];
     toPrint.push(item + " at $" + price);
-  } if (cart.length === 0) {
+  } if (l === 0) {
     console.log("Your shopping cart is empty.");
-  } else if (cart.length <= 2 ) {
+  } else if (l <= 2 ) {
     console.log("In your cart, you have " + toPrint.join(" and ") + ".");
-  } else if (cart.length >= 3 ) {
+  } else if (l >= 3 ) {
     var items = toPrint.slice(0, (toPrint.length - 1));
     console.log("In your cart, you have " + items.join(", ") + ", and " + toPrint.pop() + ".");
   } 
