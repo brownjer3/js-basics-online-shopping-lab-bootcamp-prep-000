@@ -31,7 +31,7 @@ function viewCart() {
     console.log("In your cart, you have " + toPrint.join(" and ") + ".");
   } else if (cart.length > 2 ) {
     toPrint = toPrint.slice(0, (toPrint.length)); 
-    console.log("In your cart, you have " + toPrint.join(", ") + " and " + Object.keys(cart[cart.length - 1]) + " at $" + cart[cart.length][Object.keys(cart[cart.length - 1])]);
+    console.log("In your cart, you have " + toPrint.join(", ") + " and " + Object.keys(cart[cart.length - 1]) + " at $" + cart[cart.length][Object.keys(cart[cart.length - 1])] + ".");
   } 
 }
   /* 
