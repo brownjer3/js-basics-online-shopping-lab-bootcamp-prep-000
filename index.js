@@ -29,7 +29,7 @@ function viewCart() {
     console.log("Your shopping cart is empty.");
   } else if (cart.length <= 2 ) {
     console.log("In your cart, you have " + toPrint.join(" and ") + ".");
-  } else if (cart.length > 2 ) {
+  } else if (cart.length >= 3 ) {
     toPrint = toPrint.slice(0, (toPrint.length)); 
     var lastItem = Object.keys(cart[l - 1]);
     var lastPrice = cart[l][lastItem];
