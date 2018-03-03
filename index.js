@@ -31,7 +31,9 @@ function viewCart() {
     console.log("In your cart, you have " + toPrint.join(" and ") + ".");
   } else if (cart.length > 2 ) {
     toPrint = toPrint.slice(0, (toPrint.length)); 
-    console.log("In your cart, you have " + toPrint.join(", ") + " and " + Object.keys(cart[cart.length - 1]) + " at $" + cart[cart.length][Object.keys(cart[cart.length - 1])] + ".");
+    var lastItem = Object.keys(cart[l - 1]);
+    var lastPrice = cart[l][lastItem];
+    console.log("In your cart, you have " + toPrint.join(", ") + " and " + lastItem + " at $" + lastPrice + ".");
   } 
 }
   /* 
