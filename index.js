@@ -50,7 +50,7 @@ function removeFromCart(item) {
     console.log("That item is not in your cart.");
   } else { 
     var remove = Object.keys(cart[remove]);
-    cart.
+    delete cart[remove];
   }  
 }
 
