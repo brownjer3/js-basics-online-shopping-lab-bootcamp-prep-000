@@ -25,6 +25,10 @@ function viewCart() {
     var item = Object.keys(cart[i]);
     var price = cart[i][item];
     toPrint.push(item + " at $" + price);
+  } if (cart.length === 0) {
+    console.log("Your shopping cart is empty.");
+  } else if (cart.length <=2 ) {
+    console.log("In your cart, you have " + toPrint.join(" and ") + ".");
   }
 }
   /* 
