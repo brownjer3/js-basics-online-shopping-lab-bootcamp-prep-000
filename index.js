@@ -34,30 +34,7 @@ function viewCart() {
     console.log("In your cart, you have " + items.join(", ") + ", and " + toPrint.pop() + ".");
   } 
 }
-  /* 
-  if (cart.length === 0) {
-   console.log("Your shopping cart is empty.");
- } else if (cart.length <= 2) {
-   for (var i = 0; i < cart.length; i++) {
-     var item = Object.keys(cart[i]);
-     var price = cart[i][item];
-       toPrint.push(item + " at $" + price);
-  }
-  console.log("In your cart, you have " + toPrint.join(" and ") + ".");
-  } else if (cart.length > 2) {
-     var lastItem = Object.keys(cart[l - 1]);
-     var lastPrice = cart[l][lastItem];
-   for (var p = 0; p < cart.length - 1 ; p++) {
-     var items = Object.keys(cart[p]);
-     var prices = cart[p][items];
-     toPrint.push(items + " at $" + prices);
-  }
-  console.log("In your cart, you have " + toPrint.join(", ") + " and " + lastItem + " at $" + lastPrice + ".");
-  }
-}*/
 
- // " and " + Object.keys(cart(cart.length-1)) + " at " + Object.values(cart(cart.length-1))
- 
   // loop over our cart and for every item
  // create the string ${item} at ${price}
  // save it somewhere (maybe an array?)
