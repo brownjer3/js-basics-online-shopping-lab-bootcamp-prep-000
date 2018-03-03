@@ -74,42 +74,6 @@ function viewCart() {
  // item = keys[0] => "banana"
  // price = object[key] => '12'
  
- 
- /* else if (cart.length == 1) {
-   toPrint += Object.keys(cart[0]);
-   toPrint += " at $" + Object.values(cart[0]) + ".";
-   console.log(toPrint);
- } else if (cart.length == 2) {
-   toPrint += Object.keys(cart[0]);
-   toPrint += " at $" + Object.values(cart[0]);
-   toPrint += " and " + Object.keys(cart[1]);
-   toPrint += " at $" + Object.values(cart[1]) + ".";
-   console.log(toPrint);
- } else if (cart.length >= 3) {
-   var lastItem = Object.keys(cart[(cart.length-1)]);
-   var lastPrice = Object.values(cart[(cart.length-1)]);
-   
-   // sort of like this
-   for (var i = 0; i < cart.length-1; i++) {
-   toPrint += Object.keys(cart[i]) + " at $" + Object.values(cart[i]) + ",";
-    }
-    console.log(toPrint + " and " + lastItem + " at $" + lastPrice + ".");
-  } 
-} */
- 
- 
- /* else if (cart.length == 1) { 
-    toPrint += Object.keys(cart[0])[0];
-    toPrint += " at $" + Object.values(cart[0])[0] + ".";
-    console.log(toPrint);
-  } else if (cart.length == 2) {
-    for (var i = 0; i < cart.length-1 ; i++) {
-    toPrint += Object.keys(cart[i])[0];
-    toPrint += " at $" + Object.values(cart[i])[0] + " and ";
-    }
-    toPrint += Object.keys(cart[1])[0] + " at " + Object.values(cart[1])[0] + ".";
-    console.log(toPrint);
-  } */
 
 function total() {
   // write your code here
