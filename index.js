@@ -42,7 +42,7 @@ function total() {
   var price = cart[i][item];
   total.push(price);
   }
-  return total.sum();
+  return total.sum;
 } 
 
 function removeFromCart(item) {
