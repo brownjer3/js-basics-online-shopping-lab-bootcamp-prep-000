@@ -21,6 +21,11 @@ function addToCart(itemName) {
 function viewCart() {
   var toPrint = [];
   var l = cart.length;
+  for (i = 0; i < cart.length; i++) {
+    
+  }
+}
+  /* 
   if (cart.length === 0) {
    console.log("Your shopping cart is empty.");
  } else if (cart.length <= 2) {
@@ -33,14 +38,14 @@ function viewCart() {
   } else if (cart.length > 2) {
      var lastItem = Object.keys(cart[l - 1]);
      var lastPrice = cart[l][lastItem];
-   for (var p = 0; p < cart.length - 2 ; p++) {
+   for (var p = 0; p < cart.length - 1 ; p++) {
      var items = Object.keys(cart[p]);
      var prices = cart[p][items];
      toPrint.push(items + " at $" + prices);
   }
   console.log("In your cart, you have " + toPrint.join(", ") + " and " + lastItem + " at $" + lastPrice + ".");
   }
-}
+}*/
 
  // " and " + Object.keys(cart(cart.length-1)) + " at " + Object.values(cart(cart.length-1))
  
