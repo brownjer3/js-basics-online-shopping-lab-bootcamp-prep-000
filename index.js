@@ -22,7 +22,9 @@ function viewCart() {
   var toPrint = [];
   var l = cart.length;
   for (i = 0; i < cart.length; i++) {
-    
+    var item = Object.keys(cart[i]);
+    var price = cart[i][item];
+    toPrint.push(item + " at $" + price);
   }
 }
   /* 
